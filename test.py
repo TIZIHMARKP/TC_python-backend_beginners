@@ -1,17 +1,5 @@
-# ===================  Arithmetic Operators ===================
-#  Operators are: +, -, *, /, %, **
+# ===================  Comparison Operators ===================
+#  Operators are: ==, !=, >, <, >=, <=
+# Comparison Operators answers are always booleans i.e True or False
 
-x = 10
-y = 3
-
-sumResult = x + y
-subtractionResult = x - y
-productResult = x * y
-powerResult = x ** y
-divisionResult = x / y
-remainderResult = x % y
-floorDivisionResult = x // y
-
-print(sumResult, sumResult, productResult, productResult, divisionResult, remainderResult, floorDivisionResult)
-
-
+ 
