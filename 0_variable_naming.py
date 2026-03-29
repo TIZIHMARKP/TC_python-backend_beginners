@@ -1,5 +1,6 @@
 # Variables Naming Criteria
 
+# Variables are a store of information
 # Must begin with a letter or underscore
 # Cannot start with a number
 # Can only contain alphabets, numbers, and underscores (A-Z, 0-9, and _)
@@ -28,3 +29,4 @@ print(f"My name is {a}, HIs Name is {b}, and Her name is {c}")
 x = 2
 y = 4
 print(x + y)
+
