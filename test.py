@@ -34,6 +34,26 @@
 
 
 # ===================== Concatenation ======================
+# Concatenations means bringing strings together or adding strings together
+
+
 a = "Hello"
 b = "There"
 c = a + b
+d = " "
+e = a + d + b
+
+print(c)
+print(e)
+print("Hello" + " " + "There")
+f = a + " " + b
+print(f)
+
+#  ========     Formatting =========
+
+name = "Prince Mark"
+age = 40
+info = f"My name is {name}. I am {age} years old"
+print(info)
+
+
