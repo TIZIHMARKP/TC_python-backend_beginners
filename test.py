@@ -51,9 +51,14 @@ print(f)
 
 #  ========     Formatting =========
 
-name = "Prince Mark"
-age = 40
-info = f"My name is {name}. I am {age} years old"
-print(info)
+# name = "Prince Mark"
+# age = 40
+# info = f"My name is {name}. I am {age} years old"
+# print(info)
+
+# cells = f"There are {4 * 5} cells"
+# print(cells)
+
+# ==============    Escaping Characters =========
 
 
