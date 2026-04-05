@@ -37,17 +37,17 @@
 # Concatenations means bringing strings together or adding strings together
 
 
-a = "Hello"
-b = "There"
-c = a + b
-d = " "
-e = a + d + b
+# a = "Hello"
+# b = "There"
+# c = a + b
+# d = " "
+# e = a + d + b
 
-print(c)
-print(e)
-print("Hello" + " " + "There")
-f = a + " " + b
-print(f)
+# print(c)
+# print(e)
+# print("Hello" + " " + "There")
+# f = a + " " + b
+# print(f)
 
 #  ========     Formatting =========
 
@@ -60,5 +60,9 @@ print(f)
 # print(cells)
 
 # ==============    Escaping Characters =========
+# escaped = 'Your are a \"beginner\" in web development'
+# print(escaped)
 
 
+weFormat = '''We are trying our best \n\tHowever, we need to practice\n\rOkay, Good'''
+print(weFormat)
