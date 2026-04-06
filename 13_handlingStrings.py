@@ -23,12 +23,51 @@
 # print(y.startswith("H"))   # True
 
 
-z = "He llo the re"
-print(z.strip())        # Removes leading and trailing whitespaces
+# z = "He llo the re"
+# print(z.strip())        # Removes leading and trailing whitespaces
 
-u = "Hello Fhere"
-print(u.replace("F", "I"))  # Replace a character
+# u = "Hello Fhere"
+# print(u.replace("F", "I"))  # Replace a character
 
-v = "Jane, Royal"
-print(v.split(", "))   # returns ['Jane', 'Doe']
+# v = "Jane, Royal"
+# print(v.split(", "))   # returns ['Jane', 'Doe']
+
+
+# ===================== Concatenation ======================
+# Concatenations means bringing strings together or adding strings together
+
+
+# a = "Hello"
+# b = "There"
+# c = a + b
+# d = " "
+# e = a + d + b
+
+# print(c)
+# print(e)
+# print("Hello" + " " + "There")
+# f = a + " " + b
+# print(f)
+
+#  ========     Formatting =========
+
+# name = "Prince Mark"
+# age = 40
+# info = f"My name is {name}. I am {age} years old"
+# print(info)
+
+# cells = f"There are {4 * 5} cells"
+# print(cells)
+
+# ==============    Escaping Characters =========
+# escaped = 'Your are a \"beginner\" in web development'
+# print(escaped)
+
+
+weFormat = '''We are trying our best \n\tHowever, we need to practice\n\rOkay, Good'''
+print(weFormat)
+
+# \n new line
+# \r Carriage return
+# \t Tab
 
