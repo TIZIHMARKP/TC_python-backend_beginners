@@ -55,13 +55,37 @@
 # *args is very good because some times you may not know the length of the values
 
 # # **kwargs: Collects extra keyword arguments into a dictionary
-def greet(**kwargs):
-    for key, value in kwargs.items():
-        print(f"*{key}: {value}")
+# def greet(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"*{key}: {value}")
 
-greet(name="Tizih", age=30)
+# greet(name="Tizih", age=30)
 # Output:
 # *name: Alice
 # *age: 30
+
+
+# ====== function Documentation
+
+def add(a, b):
+    """
+    Adds two numbers.
+
+    Parameters:
+    a (int or float): The first number.
+    b (int or float): The second number.
+
+    Returns:
+    int or float: The sum of a and b
+    """
+    return a + b
+
+# A higher-order function is a function that can take other functions as arguments or return a function as a result
+# e.g
+def apply_function(func, x, y):
+    return func(x, y)
+
+result = apply_function(add, 3, 5)  # Pass 'add' function as argument
+print(result)  # Output 8
 
 
