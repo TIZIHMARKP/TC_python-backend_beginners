@@ -24,14 +24,19 @@
 # print(nowCalculate)
 
 #=====================================
-# Default Arguments:
-def greetWithArgs(name="Guest"):
-    print(f"Hello, {name}!")
+# ===== Default Arguments:
+# def greetWithArgs(name="Guest"):
+#     print(f"Hello, {name}!")
 
-greetWithArgs()
+# greetWithArgs()
 
-def greetWithArgs(name, age = 30):
-    print(f"Hello, {name} {age}!")
+# def greetWithArgs(name, age = 30):
+#     print(f"Hello, {name} {age}!")
 
-greetWithArgs("PrinceWill")
-greetWithArgs(name = "Tizih", age = 120)
+# greetWithArgs("PrinceWill")
+# greetWithArgs(name = "Tizih", age = 120)
+
+# ==== Lamda Functions - arguments: expression
+# E.g
+add = lambda x, y: x + y
+print(add(3, 5))         # Output: 8
