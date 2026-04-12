@@ -38,5 +38,30 @@
 
 # ==== Lamda Functions - arguments: expression
 # E.g
-add = lambda x, y: x + y
-print(add(3, 5))         # Output: 8
+# add = lambda x, y: x + y
+# print(add(3, 5))         # Output: 8
+
+
+# === Variable-lenth Arguments: ==== 
+# You can pass an arbitrary number of arguments using *args and **kwargs.
+# *args: collects extra positional arguments into a tuple.
+# def sum_numbers(*args):
+#     print(args)    # Prints the values in sum_numbers
+#     return sum(args)
+
+# print(sum_numbers(1, 2, 3))        # Output 6
+# print(sum_numbers(4, 5, 6, 7))     # Output 22
+
+# *args is very good because some times you may not know the length of the values
+
+# # **kwargs: Collects extra keyword arguments into a dictionary
+def greet(**kwargs):
+    for key, value in kwargs.items():
+        print(f"*{key}: {value}")
+
+greet(name="Tizih", age=30)
+# Output:
+# *name: Alice
+# *age: 30
+
+
