@@ -1,41 +1,39 @@
 # =================== Logging and Error Handling  ===================
-# == The Logging Module
-# Provides a flexible way to log messages
+# == Error Handling
+"""
+Error handling allows you to manage runtime errors (exceptions) in a clean and controlled way.
+Instead of allowing your program to crash, you can catch the error, display a helpful message,
+or take corrective action.
+Using try, except, else, and finally
+"""
+
+# try: Code that might raise an error is placed inside the try block.
+# except: If an error occurs in the try block, it is caught by the except block.
+# else: Code inside, the else block is executed if no error occurs in the try block.
+# Finally: Code inside the finally block is always executed, regardless of whether an error occurred or not.
+
+# Basic Example:
+# try:
+#     x = 10 / 0  # Division by zero
+# except ZeroDivisionError:
+#     print("Cannot divide by zero.")
+# else:
+#     print("Division successful.")
+# finally:
+#     print("Execution completed.")
 
 
-import logging
 
-logging.basicConfig(
-    filename = "app.log",
-    level = logging.DEBUG,
-    format = "%(asctime)s - %(levelname)s - %(message)s"
-)
+# ==== Custom exceptions
 
-# logging.info("This is an info message.")
-# logging.error("This is an erro message.")
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+    return age
 
-# Logging Levels
-# Level  -  Purpose
-# DEBUG  -  Detailed information for debugging.
-# INFO  -  General infomation about execution
-# WARNING  -  An indication of potential problem
-# ERROR  -  Serious issue occurred.
-# CRITICAL - A severe error causing program crash
+try:
+    check_age(-5)
+except ValueError as e:
+    print(f"Error: {e}")
 
-
-# Writting logs to a file
-# logging.basicConfig(filename = "./app.log", level=logging.INFO)
-# logging.info("Program started")
-# logging.warning("This is a warning")
-# logging.error("An error occurred")
-
-
-def greet():
-    logging.critical("Program started")
-
-    for i in range(10):
-        print(i)
-    logging.critical("Program finished")
-
-
-greet()
+# Handling Multiple Exceptions
