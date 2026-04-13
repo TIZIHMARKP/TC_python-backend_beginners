@@ -50,19 +50,29 @@ Using try, except, else, and finally
 
 
 # ======
-import logging
-logging.basicConfig(
-    filename="app.log",
-    level=logging.DEBUG,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
+# import logging
+# logging.basicConfig(
+#     filename="app.log",
+#     level=logging.DEBUG,
+#     format="%(asctime)s - %(levelname)s - %(message)s"
+# )
 
+# try:
+#     # Code that might raise different exceptions
+#     x = int(input("Enter a number: "))
+#     y = 10 / x
+# except Exception as e:
+#     logging.debug(e)
+#     print(f"Something happened: {e}")
+
+
+# ==== Catching Multiple Exceptions in One except Block ===
 try:
     # Code that might raise different exceptions
     x = int(input("Enter a number: "))
     y = 10 / x
+except (ZeroDivisionError, ValueError) as e:
+    print(f"error: {e}")
 except Exception as e:
-    logging.debug(e)
-    print(f"Something happened: {e}")
-
-
+    print(f"Unexpected error: {e}")
+ 
