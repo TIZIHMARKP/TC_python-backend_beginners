@@ -5,3 +5,5 @@
 2026-04-13 14:33:41,382 - ERROR - An error occurred
 2026-04-13 14:40:18,509 - CRITICAL - Program started
 2026-04-13 14:40:18,510 - CRITICAL - Program finished
+2026-04-13 15:24:56,351 - DEBUG - division by zero
+2026-04-13 15:25:56,337 - DEBUG - invalid literal for int() with base 10: 'o'
