@@ -1,0 +1,7 @@
+2026-04-13 14:33:41,380 - INFO - This is an info message.
+2026-04-13 14:33:41,381 - ERROR - This is an erro message.
+2026-04-13 14:33:41,381 - INFO - Program started
+2026-04-13 14:33:41,381 - WARNING - This is a warning
+2026-04-13 14:33:41,382 - ERROR - An error occurred
+2026-04-13 14:40:18,509 - CRITICAL - Program started
+2026-04-13 14:40:18,510 - CRITICAL - Program finished
