@@ -17,15 +17,29 @@ A module is a file containing Python definitions and statements. It can include:
 # Custom modules are the ones you wrote yourself for different implementationsin your codebase
 
 # To use a module, you can import it:
-import math
+# import math
 
-print(math.sqrt(16))   # Using the math module to find the square root
+# print(math.sqrt(16))   # Using the math module to find the square root
 
-x = math.ceil(2.4)
-y = math.floor(2.4)
+# x = math.ceil(2.4)
+# y = math.floor(2.4)
 
-print(x)      # returns 3
-print(y)      # returns 2
+# print(x)      # returns 3
+# print(y)      # returns 2
 
+# ======   Date and time Module  =====
+import datetime
+
+a = datetime.datetime.now()
+print(a)
+
+b = datetime.datetime(2020, 5, 17)
+
+print(b)
+
+# You can also import specific functions or variables from a module:
+from math import pi
+
+print(pi)   # Direct access to pi
 
 
