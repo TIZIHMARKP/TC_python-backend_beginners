@@ -1,4 +1,4 @@
-# Python Basics: My Backend Development Foundation With 🐍
+# Python Basics: My TC Backend Development Foundation With 🐍
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)
