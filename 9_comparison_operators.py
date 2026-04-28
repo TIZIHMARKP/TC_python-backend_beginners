@@ -26,4 +26,4 @@ print(b >= a)   # T
 c = "Tizih"
 x = "Prince"     # Only equality and non-equality works with string
 
-print(c == x)   #  
+print(c == x)    #   

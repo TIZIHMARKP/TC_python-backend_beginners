@@ -80,25 +80,25 @@ Using try, except, else, and finally
 # This is done using the raise keyword.
 # This is particularly useful when you want to ensure that certain conditions are met before proceeding with the program
 # Raising a Built-in Exception:
-# x = -5
-# if x < 0:
-#     raise ValueError("Value cannot be negative.")
+x = -5
+if x < 0:
+    raise ValueError("Value cannot be negative.")
 
 # ==== Raising Custom Exceptions:
 # You can also define and raise your own custom exception by subclassing the built-in Exception class.
 
-class CustomError(Exception):
-    pass
+# class CustomError(Exception):
+#     pass
 
-def check_age(age):
-    if age < 0:
-        raise CustomError("Age cannot be negative.")
-    print(f"Age: {age}")
+# def check_age(age):
+#     if age < 0:
+#         raise CustomError("Age cannot be negative.")
+#     print(f"Age: {age}")
 
-try:
-    check_age(-5)
-except CustomError as e:
-    print(f"Custom error occurred: {e}")
+# try:
+#     check_age(-5)
+# except CustomError as e:
+#     print(f"Custom error occurred: {e}")
 
 # === Common Python Exception Types  ===
 # ZeroDivisionError: Raised when trying to divide by zero

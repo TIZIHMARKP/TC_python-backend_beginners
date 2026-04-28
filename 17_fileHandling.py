@@ -31,13 +31,15 @@
 #     file.writelines(["Line 1\n", "Line 2\n"])
 
 # Appending Files
-# with open("example.txt", "a") as file:
-#     file.write("This is an appended line.")
-#     file.writelines(["Appended Line 3\n", "Appended Line 4\n"])
+with open("example.txt", "a") as file:
+    file.write("This is an appended line.")
+    file.writelines(["Appended Line 3\n", "Appended Line 4\n"])
 
 # To delete a file
-import os
-if os.path.exists("example.txt"):
-    os.remove("example.txt")
+# import os
+# if os.path.exists("example.txt"):
+#     os.remove("example.txt")
+
+
 
 

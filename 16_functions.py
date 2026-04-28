@@ -61,7 +61,7 @@
 
 # greet(name="Tizih", age=30)
 # Output:
-# *name: Alice
+# *name: Tizih
 # *age: 30
 
 

@@ -1,9 +1,8 @@
-2026-04-13 14:33:41,380 - INFO - This is an info message.
-2026-04-13 14:33:41,381 - ERROR - This is an erro message.
-2026-04-13 14:33:41,381 - INFO - Program started
-2026-04-13 14:33:41,381 - WARNING - This is a warning
-2026-04-13 14:33:41,382 - ERROR - An error occurred
-2026-04-13 14:40:18,509 - CRITICAL - Program started
-2026-04-13 14:40:18,510 - CRITICAL - Program finished
-2026-04-13 15:24:56,351 - DEBUG - division by zero
-2026-04-13 15:25:56,337 - DEBUG - invalid literal for int() with base 10: 'o'
+
+2026-04-27 17:03:20,971 - INFO - This is an info message.
+2026-04-27 17:03:20,971 - ERROR - This is an erro message.
+2026-04-27 17:06:58,710 - INFO - This is an info message.
+2026-04-27 17:06:58,710 - ERROR - This is an erro message.
+2026-04-27 17:06:58,710 - INFO - Program started
+2026-04-27 17:06:58,711 - WARNING - This is a warning
+2026-04-27 17:06:58,711 - ERROR - An error occurred

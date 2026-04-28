@@ -13,7 +13,7 @@
 
 # print(x[7:])    # slicing a string from character 7 to the end
 
-# print(x[-5:-2])   # gives you orl
+# print(x[-5:-2])   # gives you: Tiz
 
 # y = "Hello Marko"
 
@@ -27,7 +27,7 @@
 # print(z.strip())        # Removes leading and trailing whitespaces
 
 # u = "Hello Fhere"
-# print(u.replace("F", "I"))  # Replace a character
+# print(u.replace("F", "T"))  # Replace a character
 
 # v = "Jane, Royal"
 # print(v.split(", "))   # returns ['Jane', 'Doe']
@@ -37,17 +37,17 @@
 # Concatenations means bringing strings together or adding strings together
 
 
-# a = "Hello"
-# b = "There"
-# c = a + b
-# d = " "
-# e = a + d + b
+a = "Hello"
+b = "There"
+c = a + b
+d = " "
+e = a + d + b
 
-# print(c)
-# print(e)
-# print("Hello" + " " + "There")
-# f = a + " " + b
-# print(f)
+print(c)
+print(e)
+print("Hello" + " " + "There")
+f = a + " " + b
+print(f)
 
 #  ========     Formatting =========
 
