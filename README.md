@@ -58,14 +58,14 @@ This repository is a **time capsule** of everything I learned: clean code, worki
 
 ## Why This Matters
 
-Because backend development isn't just about knowing syntax—it's about understanding how pieces fit together. This learning gave me:
+Because backend development isn't just about knowing syntax, it's about understanding how pieces fit together. This learning gave me:
 
 ✅ **Confidence** to tackle Flask next  
 ✅ **Clean code habits** with comments and structure  
 ✅ **Practical Learning** that mirror real-world logic  
 ✅ **A GitHub portfolio** that shows my growth path  
 
-Every folder in this repo represents a concept I practiced, broke, fixed, and understood. This isn't theory—it's hands-on learning.
+Every folder in this repo represents a concept I practiced, broke, fixed, and understood. This is not theory, but it is hands on learning.
 
 ### Repository Structure
 python-basics-backend/
