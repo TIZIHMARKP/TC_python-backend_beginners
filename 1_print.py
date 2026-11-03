@@ -18,4 +18,8 @@ written in
 more than just one line
 """
 
+my_list = []         # Changeable
+my_tuple = ()        # Fixed
+my_dict = {}         # key: value
+my_set = {1, 2, 3}   # unique only
 
