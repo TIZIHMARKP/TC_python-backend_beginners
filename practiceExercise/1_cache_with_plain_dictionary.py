@@ -63,32 +63,77 @@ my_set = {1, 2, 3}   # unique only
 
 # ========= Exercise 3: Rewrite Exercise 2 so each cache entry is a dict like {"value": ..., "saved_at": ...} instead of a tuple.
 
+# import time
+
+# cache = {}
+# TTL = 3
+
+# def get_square(n):
+#     entry = cache.get(n)
+
+#     if entry is not None:
+#         age = time.time() - entry['saved_at']
+
+#         if age < TTL:
+#             print('\n from cache')
+#             return entry['value']
+
+#     print('\n computing')
+#     result = n * n
+#     cache[n] = {'value': result, 'saved_at': time.time()}
+
+#     return result
+
+# print(get_square(4))   # computing => 16
+# print(get_square(4))   # from cache => 16
+# print(get_square(6))   # computing => 36
+
+# time.sleep(4)
+# print(get_square(4))   # computing (expired) => 16
+# print(get_square(6))   # computing (expired) => 36
+# print(get_square(5)) 
+
+
+# ======== Exercise 4. Add a fallback when the 'API' fails
+# Task: Write get_weather(city) that uses a function fake_api(city) which raises an error 50% of the time. Rules:
+# If API works => save to cache (TTL 5s) and return the value
+# If API fails and we have any cached value (even expired) => return the old cached value
+# If API fails and nothing is cached => raise RuntimeError('no data')
+
 import time
+import random
 
 cache = {}
-TTL = 3
+TTL = 5
 
-def get_square(n):
-    entry = cache.get(n)
+def fake_api(city):
+    if random.random() < 0.5:
+        raise ConnectionError('api Error')
+
+    return f'sunny in {city}'
+
+
+def get_weather(city):
+    entry = cache.get(city)
 
     if entry is not None:
-        age = time.time() - entry['saved_at']
+        if time.time() - entry['saved_at'] < TTL:
 
-        if age < TTL:
-            print('\n from cache')
             return entry['value']
 
-    print('\n computing')
-    result = n * n
-    cache[n] = {'value': result, 'saved_at': time.time()}
+    try:
+        value = fake_api(city)
+        cache[city] = {'value': value, 'saved_at': time.time()}
+        return value
 
-    return result
+    except ConnectionError:
 
-print(get_square(4))   # computing => 16
-print(get_square(4))   # from cache => 16
-print(get_square(6))   # computing => 36
+        if entry is not None:
+            return entry['value']
 
-time.sleep(4)
-print(get_square(4))   # computing (expired) => 16
-print(get_square(6))   # computing (expired) => 36
-print(get_square(5)) 
+        raise RuntimeError('no data')
+
+print(fake_api('bamenda')) 
+# print(fake_api('Douala')) 
+# print(fake_api('Yaounde')) 
+# print(fake_api('bamenda')) 
